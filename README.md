@@ -1,2 +1,2 @@
-# introduzione-a-shell
+# Introduzione a shell
 Versione italiana della lezione Shell-novice di Software Carpentries
