@@ -1,7 +1,7 @@
 ---
-title"Presentazione della conchiglia"
-Durata 5
-Esercizi 0
+title: "Presentazione della conchiglia"
+Durata: 5
+Esercizi: 0
 Domande:
 - "Cos'è una shell dei comandi e perché dovrei usarne una?"
 Obiettivi formativi:
@@ -16,7 +16,7 @@ automatizzando le attività ripetitive e la sua capacità di accedere alle macch
 - "I principali svantaggi della shell sono la sua natura principalmente testuale e come
 i suoi comandi e il suo funzionamento possono essere criptici."
 ---
-### Sfondo
+### Perchè imparare la Shell Unix?
 
 Gli esseri umani e i computer interagiscono comunemente in molti modi diversi, ad esempio attraverso una tastiera e un mouse,
 interfacce touch screen o utilizzando sistemi di riconoscimento vocale.
@@ -39,7 +39,7 @@ tutte le volte che vogliamo.
 Utilizzando la shell, l'attività nell'esempio della letteratura può essere eseguita in pochi secondi.
 
 
-### Il guscio
+### La Shell
 
 
 La shell è un programma in cui gli utenti possono digitare comandi.
@@ -78,7 +78,7 @@ indicando che la shell è in attesa di input.
 ~~~
 $
 ~~~
-{: .lingua-bash}
+{: .language-bash}
 
 La shell usa tipicamente `$ ` come prompt, ma può usare un simbolo diverso.
 Negli esempi di questa lezione, mostreremo il prompt come `$ `.
@@ -98,13 +98,13 @@ Questo comando elencherà il contenuto della directory corrente:
 ~~~
 $ l
 ~~~
-{: .lingua-bash}
+{: .language-bash}
 
 ~~~
 Desktop Scarica Film Immagini
 Documenti Biblioteca Musica Pubblico
 ~~~
-{: .produzione}
+{: .output}
 
 > ## Comando non trovato
 > Se la shell non riesce a trovare un programma il cui nome è il comando che hai digitato, esso
@@ -113,7 +113,7 @@ Documenti Biblioteca Musica Pubblico
 > ~~~
 > $ ks
 > ~~~
-> {: .lingua-bash}
+> {: .language-bash}
 > ~~~
 > ks: comando non trovato
 > ~~~
@@ -121,13 +121,13 @@ Documenti Biblioteca Musica Pubblico
 >
 > Ciò potrebbe accadere se il comando è stato digitato in modo errato o se il programma corrispondente a quel comando
 > non è installato.
-{: .chiamare}
+{: .callout}
 
 ## Pipeline di Nelle: un problema tipico
 
 Nelle Nemo, biologo marino,
 è appena tornato da un'indagine semestrale del
-[Gyre del Pacifico settentrionale](http://en.wikipedia.org/wiki/Gyre_del Pacifico settentrionale),
+[Gyre del Pacifico settentrionale](http://en.wikipedia.org/wiki/North_Pacific_Gyre),
 dove ha campionato la vita marina gelatinosa nel
 [Great Pacific Garbage Patch](http://en.wikipedia.org/wiki/Great_Pacific_Garbage_Patch).
 Ha 1520 campioni che ha fatto passare attraverso una macchina di analisi per misurare l'abbondanza relativa
@@ -142,3 +142,24 @@ Se `goostats.sh` impiega 30 secondi per eseguire ciascun file, l'intero processo
 dell'attenzione di Nelle.
 Con la shell, Nelle può invece assegnare al suo computer questo compito banale mentre si concentra
 la sua attenzione nello scrivere il suo giornale.
+
+Le prossime lezioni esploreranno i modi in cui Nelle può raggiungere questo obiettivo.
+Più specificamente,
+spiegano come può usare una shell dei comandi per eseguire il programma `goostats.sh`,
+utilizzando i loop per automatizzare i passaggi ripetitivi di immissione dei nomi dei file,
+in modo che il suo computer possa funzionare mentre scrive la sua carta.
+
+Come bonus,
+una volta che ha messo insieme una pipeline di elaborazione,
+potrà riutilizzarlo ogni volta che raccoglierà più dati.
+
+Per portare a termine il suo compito, Nelle deve sapere come:
+- navigare in un file/directory
+- creare un file/directory
+- controlla la lunghezza di un file
+- concatenare i comandi insieme
+- recuperare una serie di file
+- scorrere i file
+- eseguire uno script di shell contenente la sua pipeline
+
+{% include links.md %}
